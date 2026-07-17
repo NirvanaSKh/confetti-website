@@ -1,26 +1,10 @@
-# Netlify configuration for Confetti & Co.
+# Netlify configuration — Confetti & Co.
+# Files live in the repo root, so the publish directory is "."
 
 [build]
   publish = "."
 
-# Form notifications
-[[redirects]]
-  from = "/feedback"
-  to = "/"
-  status = 200
-
-[[redirects]]
-  from = "/enquiry"
-  to = "/"
-  status = 200
-
-# Email notifications for form submissions
-[functions]
-
-[[forms]]
-  name = "feedback"
-  email_notifications = ["budai_reka@yahoo.com"]
-
-[[forms]]
-  name = "enquiry"
-  email_notifications = ["budai_reka@yahoo.com"]
+# Note: Netlify Forms are detected automatically from the HTML
+# (the data-netlify="true" attribute). Email notifications to
+# budai_reka@yahoo.com are set in the Netlify UI:
+#   Site settings -> Forms -> Form notifications -> Add notification -> Email

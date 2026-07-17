@@ -1,0 +1,26 @@
+# Netlify configuration for Confetti & Co.
+
+[build]
+  publish = "."
+
+# Form notifications
+[[redirects]]
+  from = "/feedback"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/enquiry"
+  to = "/"
+  status = 200
+
+# Email notifications for form submissions
+[functions]
+
+[[forms]]
+  name = "feedback"
+  email_notifications = ["budai_reka@yahoo.com"]
+
+[[forms]]
+  name = "enquiry"
+  email_notifications = ["budai_reka@yahoo.com"]

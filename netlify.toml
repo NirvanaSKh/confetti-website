@@ -1,0 +1,10 @@
+# Netlify configuration — Confetti & Co.
+# Files live in the repo root, so the publish directory is "."
+
+[build]
+  publish = "."
+
+# Note: Netlify Forms are detected automatically from the HTML
+# (the data-netlify="true" attribute). Email notifications to
+# budai_reka@yahoo.com are set in the Netlify UI:
+#   Site settings -> Forms -> Form notifications -> Add notification -> Email
